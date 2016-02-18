@@ -67,8 +67,11 @@ function epixmaterialwp_setup() {
 		'aside',
 		'image',
 		'video',
+		'audio',
 		'quote',
-		'link',
+		'status',
+		'gallery',
+		'link'
 	) );
 
 	// Set up the WordPress core custom background feature.
