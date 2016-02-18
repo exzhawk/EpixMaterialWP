@@ -75,10 +75,10 @@ function epixmaterialwp_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'epixmaterialwp_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+//	add_theme_support( 'custom-background', apply_filters( 'epixmaterialwp_custom_background_args', array(
+//		'default-color' => 'ffffff',
+//		'default-image' => '',
+//	) ) );
 }
 endif;
 add_action( 'after_setup_theme', 'epixmaterialwp_setup' );
@@ -132,7 +132,7 @@ add_action( 'wp_enqueue_scripts', 'epixmaterialwp_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+//require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
