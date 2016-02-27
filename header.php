@@ -27,20 +27,13 @@
 
     <header id="masthead" class="site-header mdl-layout__header" role="banner">
         <div class="mdl-layout__header-row">
-            <?php
-            if (is_front_page() && is_home()) : ?>
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="mdl-layout-title"
-                                          rel="home"><?php bloginfo('name'); ?></a>
-            <?php else : ?>
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="mdl-layout-title"
-                                         rel="home"><?php bloginfo('name'); ?></a>
-                <?php
-            endif; ?>
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="mdl-layout-title"
+               rel="home"><?php bloginfo('name'); ?></a>
 
             <div class="mdl-layout-spacer"></div>
 
             <nav id="site-navigation" class="main-navigation mdl-navigation" role="navigation">
-                <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+                <?php echo epixmaterialwp_simple_a_tag_menu('mdl-navigation__link') ?>
             </nav><!-- #site-navigation -->
         </div>
     </header><!-- #masthead -->

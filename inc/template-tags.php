@@ -119,3 +119,9 @@ function epixmaterialwp_category_transient_flusher() {
 }
 add_action( 'edit_category', 'epixmaterialwp_category_transient_flusher' );
 add_action( 'save_post',     'epixmaterialwp_category_transient_flusher' );
+
+
+function epixmaterialwp_simple_a_tag_menu($class_value){
+	return strip_tags(preg_replace('/<a/', '<a class="' . $class_value . '"', wp_nav_menu(array('theme_location' => 'primary',
+		'container' => false, 'echo' => false, 'items_wrap' => '%3$s'))), '<a>');
+}
