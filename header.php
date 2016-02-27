@@ -27,8 +27,9 @@
 
     <header id="masthead" class="site-header mdl-layout__header" role="banner">
         <div class="mdl-layout__header-row">
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="mdl-layout-title"
-               rel="home"><?php bloginfo('name'); ?></a>
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="mdl-layout-title" rel="home">
+                <?php bloginfo('name'); ?>
+            </a>
 
             <div class="mdl-layout-spacer"></div>
 
@@ -37,5 +38,13 @@
             </nav><!-- #site-navigation -->
         </div>
     </header><!-- #masthead -->
+    <div class="mdl-layout__drawer">
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="mdl-layout-title" rel="home">
+            <?php bloginfo('name'); ?>
+        </a>
+        <nav class="mdl-navigation">
+            <?php echo epixmaterialwp_simple_a_tag_menu('mdl-navigation__link') ?>
+        </nav><!-- #site-navigation -->
+    </div>
 
     <div id="content" class="site-content">
