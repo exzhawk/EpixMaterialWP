@@ -127,7 +127,7 @@ function epixmaterialwp_scripts() {
 
 	wp_enqueue_script('epixmaterialwp-google-md-script', 'https://code.getmdl.io/1.1.1/material.min.js', array(), '20160219', true);
 
-	wp_enqueue_script( 'epixmaterialwp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+//	wp_enqueue_script( 'epixmaterialwp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'epixmaterialwp-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
