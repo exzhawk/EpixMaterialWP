@@ -27,21 +27,17 @@
 
     <header id="masthead" class="site-header mdl-layout__header" role="banner">
         <div class="mdl-layout__header-row">
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="mdl-layout-title" rel="home">
-                <?php bloginfo('name'); ?>
-            </a>
+            <span class="mdl-layout-title"><?php bloginfo('name'); ?></span>
 
             <div class="mdl-layout-spacer"></div>
 
-            <nav id="site-navigation" class="main-navigation mdl-navigation" role="navigation">
+            <nav id="site-navigation" class="main-navigation mdl-navigation mdl-layout--large-screen-only" role="navigation">
                 <?php echo epixmaterialwp_simple_a_tag_menu('mdl-navigation__link') ?>
             </nav><!-- #site-navigation -->
         </div>
     </header><!-- #masthead -->
-    <div class="mdl-layout__drawer">
-        <a href="<?php echo esc_url(home_url('/')); ?>" class="mdl-layout-title" rel="home">
-            <?php bloginfo('name'); ?>
-        </a>
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+        <span class="mdl-layout-title"><?php bloginfo('name'); ?></span>
         <nav class="mdl-navigation">
             <?php echo epixmaterialwp_simple_a_tag_menu('mdl-navigation__link') ?>
         </nav><!-- #site-navigation -->
