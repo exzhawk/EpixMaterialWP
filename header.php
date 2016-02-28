@@ -43,4 +43,5 @@
         </nav><!-- #site-navigation -->
     </div>
 
-    <div id="content" class="site-content">
+    <main id="content" class="site-content mdl-layout__content">
+        <div class="page-content">

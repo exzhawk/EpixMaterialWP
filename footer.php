@@ -10,8 +10,8 @@
  */
 
 ?>
-
-	</div><!-- #content -->
+	</div>
+	</main><!-- #content -->
 
 	<footer id="colophon" class="site-footer mdl-mini-footer" role="contentinfo">
 		<div class="site-info mdl-mini-footer__left-section">
