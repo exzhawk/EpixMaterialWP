@@ -5,11 +5,6 @@ Override Style
 .admin-bar > .mdl-layout__container {
   height: auto; }
 
-/* make  title link white */
-#masthead .mdl-layout-title {
-  color: #ffffff;
-  text-decoration: none; }
-
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
