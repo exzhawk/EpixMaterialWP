@@ -7,6 +7,10 @@ Override Style
   height: auto;
 }
 
+/* prevent overflow of main */
+#content{
+  position: static;
+}
 
 /*--------------------------------------------------------------
 # Accessibility

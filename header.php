@@ -44,4 +44,4 @@
     </div>
 
     <main id="content" class="site-content mdl-layout__content">
-        <div class="page-content">
+        <div class="page-content mdl-grid">
