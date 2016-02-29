@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('mdl-card mdl-shadow--4dp'); ?>>
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) {
