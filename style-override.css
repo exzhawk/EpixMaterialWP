@@ -1,6 +1,9 @@
 /*
 Override Style
 */
+#primary > article {
+  width: auto; }
+
 /* prevent overflow when admin bar shown */
 .admin-bar > .mdl-layout__container {
   height: auto; }
