@@ -10,6 +10,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('mdl-card mdl-shadow--4dp'); ?>>
+<!--	<a href="' . esc_url( get_permalink() ) . '" rel="bookmark"></a>-->
+	<div class="mdl-card__media">
+		<?php the_post_thumbnail('w400h400-thumb');?>
+	</div>
 	<div class="mdl-card__title">
 		<?php
 		if ( is_single() ) {
@@ -19,7 +23,7 @@
 		}
 		?>
 	</div>
-<!--	<a href="' . esc_url( get_permalink() ) . '" rel="bookmark"></a>-->
+
 	<header class="entry-header">
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
