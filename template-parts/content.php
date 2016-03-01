@@ -10,15 +10,18 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('mdl-card mdl-shadow--4dp'); ?>>
-	<header class="entry-header">
+	<div class="mdl-card__title">
 		<?php
-			if ( is_single() ) {
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			} else {
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			}
-
-		if ( 'post' === get_post_type() ) : ?>
+		if ( is_single() ) {
+			the_title( '<h2 class="entry-title mdl-card__title-text">', '</h1>' );
+		} else {
+			the_title( '<h2 class="entry-title mdl-card__title-text">', '</h2>' );
+		}
+		?>
+	</div>
+<!--	<a href="' . esc_url( get_permalink() ) . '" rel="bookmark"></a>-->
+	<header class="entry-header">
+		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php epixmaterialwp_posted_on(); ?>
 		</div><!-- .entry-meta -->
