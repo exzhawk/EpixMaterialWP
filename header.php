@@ -22,8 +22,8 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <a class="skip-link screen-reader-text"
-       href="#content"><?php esc_html_e('Skip to content', 'epixmaterialwp'); ?></a>
+<!--    <a class="skip-link screen-reader-text"-->
+<!--       href="#content">--><?php //esc_html_e('Skip to content', 'epixmaterialwp'); ?><!--</a>-->
 
     <header id="masthead" class="site-header mdl-layout__header" role="banner">
         <div class="mdl-layout__header-row">

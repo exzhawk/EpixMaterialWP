@@ -1,11 +1,23 @@
 <?php
 /**
+ *
  * Custom template tags for this theme.
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
  * @package EpixMaterialWP
  */
+
+
+if (! function_exists('epixmaterialwp_get_publish_time')):
+	function epixmaterialwp_get_publish_time() {
+		$format_time_string = '<time datetime="%1$s">%2$s</time>';
+		$time_string=sprintf($format_time_string,
+			esc_attr( get_the_date( 'c' ) ),
+			esc_html( get_the_date() )
+			);
+	}
+endif;
 
 if ( ! function_exists( 'epixmaterialwp_posted_on' ) ) :
 /**
@@ -68,8 +80,8 @@ function epixmaterialwp_entry_footer() {
 	edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */
-			esc_html__( 'Edit %s', 'epixmaterialwp' ),
-			the_title( '<span class="screen-reader-text">"', '"</span>', false )
+			esc_html__( 'Edit %s', 'epixmaterialwp' )
+//			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
 		'<span class="edit-link">',
 		'</span>'
