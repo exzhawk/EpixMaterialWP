@@ -80,7 +80,7 @@ function epixmaterialwp_entry_footer() {
 	edit_post_link(
 		sprintf(
 			/* translators: %s: Name of current post */
-			esc_html__( 'Edit %s', 'epixmaterialwp' )
+			esc_html__( 'Edit %s', 'epixmaterialwp' ), ""
 //			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
 		'<span class="edit-link">',
