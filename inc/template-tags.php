@@ -54,6 +54,18 @@ function epixmaterialwp_posted_on() {
 }
 endif;
 
+/**
+ * Return tags for current post.
+ */
+if (! function_exists('epixmaterialwp_get_tags')):
+	function epixmaterialwp_get_tags() {
+		$tags_list = preg_replace( '/<a/', '<a class="epixmdl_tag"', get_the_tag_list() );
+		if ( $tags_list ) {
+			return '<span class="tags-links">' . $tags_list . '</span>';
+		}
+	}
+endif;
+
 if ( ! function_exists( 'epixmaterialwp_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.

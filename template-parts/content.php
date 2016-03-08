@@ -30,6 +30,9 @@
 		<div class="mdl-card__supporting-text">
 			<?php echo epixmaterialwp_get_publish_time(); ?>
 		</div>
+		<div class="mdl-card__supporting-text">
+			<?php echo epixmaterialwp_get_tags(); ?>
+		</div>
 		<?php
 	endif; ?>
 </article><!-- #post-## -->
