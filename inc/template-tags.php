@@ -16,6 +16,7 @@ if (! function_exists('epixmaterialwp_get_publish_time')):
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() )
 			);
+		return $time_string;
 	}
 endif;
 

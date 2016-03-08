@@ -27,12 +27,9 @@
 		<?php echo strip_tags(get_the_content( '' )); ?>
 	</div>
 	<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php epixmaterialwp_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		<div class="mdl-card__supporting-text">
+			<?php echo epixmaterialwp_get_publish_time(); ?>
+		</div>
 		<?php
 	endif; ?>
-	<div class="mdl-card__supporting-text">
-		<?php epixmaterialwp_entry_footer(); ?>
-	</div>
 </article><!-- #post-## -->
