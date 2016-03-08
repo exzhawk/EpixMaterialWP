@@ -59,7 +59,7 @@ endif;
  */
 if (! function_exists('epixmaterialwp_get_tags')):
 	function epixmaterialwp_get_tags() {
-		$tags_list = preg_replace( '/<a/', '<a class="epixmdl_tag"', get_the_tag_list() );
+		$tags_list = epixmaterialwp_add_class_to_bare_tag( 'a', 'epixmdl_tag', get_the_tag_list() );
 		if ( $tags_list ) {
 			return '<span class="tags-links">' . $tags_list . '</span>';
 		}
@@ -149,6 +149,10 @@ add_action( 'save_post',     'epixmaterialwp_category_transient_flusher' );
 
 
 function epixmaterialwp_simple_a_tag_menu($class_value){
-	return strip_tags(preg_replace('/<a/', '<a class="' . $class_value . '"', wp_nav_menu(array('theme_location' => 'primary',
-		'container' => false, 'echo' => false, 'items_wrap' => '%3$s'))), '<a>');
+	return strip_tags( epixmaterialwp_add_class_to_bare_tag( 'a', $class_value, wp_nav_menu( array( 'theme_location' => 'primary',
+		'container' => false, 'echo' => false, 'items_wrap' => '%3$s' ) ) ), '<a>' );
+}
+
+function epixmaterialwp_add_class_to_bare_tag( $target_tag, $class_value, $source_html ) {
+	return preg_replace( '/<' . $target_tag . '/', '<' . $target_tag . ' class="' . $class_value . '"', $source_html );
 }
