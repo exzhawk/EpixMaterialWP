@@ -8,7 +8,9 @@
  * @package EpixMaterialWP
  */
 
-
+/**
+ * Return publish time for current post.
+ */
 if (! function_exists('epixmaterialwp_get_publish_time')):
 	function epixmaterialwp_get_publish_time() {
 		$format_time_string = '<time datetime="%1$s">%2$s</time>';
