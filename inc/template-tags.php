@@ -63,6 +63,9 @@ if (! function_exists('epixmaterialwp_get_tags')):
 		if ( $tags_list ) {
 			return '<span class="tags-links">' . $tags_list . '</span>';
 		}
+		else{
+			return '';
+		}
 	}
 endif;
 
