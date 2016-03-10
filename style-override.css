@@ -13,6 +13,20 @@ Override Style
 #content {
   position: static; }
 
+/* material design style chip */
+.epixmdl_tag {
+  border-radius: 16px;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  margin: 8px 8px 0 0;
+  padding: 0 12px;
+  float: left;
+  box-sizing: border-box;
+  background: #e0e0e0;
+  color: #424242;
+  text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

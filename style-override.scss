@@ -2,19 +2,34 @@
 Override Style
 */
 
-#primary > article{
-  width:auto;
+#primary > article {
+  width: auto;
   margin: 20px;
 }
 
 /* prevent overflow when admin bar shown */
-.admin-bar > .mdl-layout__container{
+.admin-bar > .mdl-layout__container {
   height: auto;
 }
 
 /* prevent overflow of main */
-#content{
+#content {
   position: static;
+}
+
+/* material design style chip */
+.epixmdl_tag {
+  border-radius: 16px;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  margin: 8px 8px 0 0;
+  padding: 0 12px;
+  float: left;
+  box-sizing: border-box;
+  background: rgb(224, 224, 224);
+  color: rgb(66, 66, 66);
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
