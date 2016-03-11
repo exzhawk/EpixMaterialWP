@@ -17,6 +17,20 @@ if (! function_exists('epixmaterialwp_get_publish_time')):
 		$time_string=sprintf($format_time_string,
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() )
+		);
+		return $time_string;
+	}
+endif;
+
+/**
+ * Return update time for current post.
+ */
+if (! function_exists('epixmaterialwp_get_update_time')):
+	function epixmaterialwp_get_update_time() {
+		$format_time_string = '<time datetime="%1$s">%2$s</time>';
+		$time_string=sprintf($format_time_string,
+			esc_attr( get_the_modified_date( 'c' ) ),
+			esc_html( get_the_modified_date() )
 			);
 		return $time_string;
 	}
