@@ -33,6 +33,9 @@
 		<div class="mdl-card__supporting-text">
 			<?php echo epixmaterialwp_get_tags(); ?>
 		</div>
+		<div class="mdl-card__supporting-text">
+			<?php echo epixmaterialwp_get_cats(); ?>
+		</div>
 		<?php
 	endif; ?>
 </article><!-- #post-## -->

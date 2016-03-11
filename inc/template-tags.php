@@ -62,8 +62,21 @@ if (! function_exists('epixmaterialwp_get_tags')):
 		$tags_list = epixmaterialwp_add_class_to_bare_tag( 'a', 'epixmdl_tag', get_the_tag_list() );
 		if ( $tags_list ) {
 			return '<span class="tags-links">' . $tags_list . '</span>';
+		} else {
+			return '';
 		}
-		else{
+	}
+endif;
+
+/**
+ * Return tags for current post.
+ */
+if (! function_exists('epixmaterialwp_get_cats')):
+	function epixmaterialwp_get_cats() {
+		$categories_list = get_the_category_list( esc_html__( ' ', 'epixmaterialwp' ) );
+		if ( $categories_list && epixmaterialwp_categorized_blog() ) {
+			return '<span class="cat-links">' . $categories_list . '</span>'; // WPCS: XSS OK.
+		} else {
 			return '';
 		}
 	}
