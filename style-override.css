@@ -10,9 +10,6 @@ Override Style
   height: auto; }
 
 /* prevent overflow of main */
-#content {
-  position: static; }
-
 /* material design style chip */
 .epixmdl_tag {
   border-radius: 16px;
