@@ -1,6 +1,9 @@
 /*
 Override Style
 */
+.epixmdl_card {
+  flex-direction: row; }
+
 #primary > article {
   width: auto;
   margin: 20px; }
