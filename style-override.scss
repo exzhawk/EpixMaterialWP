@@ -1,8 +1,21 @@
 /*
 Override Style
 */
-.epixmdl_card{
+
+/* row style mdl card */
+.epixmdl_card {
   flex-direction: row;
+}
+
+.epixmdl_card__left {
+  flex: initial;
+  width: 400px;
+  min-width: 200px;
+
+}
+
+.epixmdl_card__right {
+  flex: 1
 }
 
 #primary > article {
