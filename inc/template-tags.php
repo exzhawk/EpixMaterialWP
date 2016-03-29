@@ -122,7 +122,7 @@ if (! function_exists('epixmaterialwp_tags')):
 endif;
 
 /**
- * Return tags for current post.
+ * Return cats for current post.
  */
 if (! function_exists('epixmaterialwp_get_cats')):
 	function epixmaterialwp_get_cats() {
