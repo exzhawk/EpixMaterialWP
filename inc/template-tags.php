@@ -23,6 +23,19 @@ if (! function_exists('epixmaterialwp_get_publish_time')):
 endif;
 
 /**
+ * Print publish time for current post.
+ */
+if (! function_exists('epixmaterialwp_publish_time')):
+	function epixmaterialwp_publish_time ( $wrap = true, $wrap_class = 'mdl-card__supporting-text' ) {
+		if ($wrap == false) {
+			echo epixmaterialwp_get_publish_time();
+		} else {
+			echo '<div class="' . $wrap_class . '">' . epixmaterialwp_get_publish_time() . '</div>';
+		}
+	}
+endif;
+
+/**
  * Return update time for current post.
  */
 if (! function_exists('epixmaterialwp_get_update_time')):
@@ -33,6 +46,19 @@ if (! function_exists('epixmaterialwp_get_update_time')):
 			esc_html( get_the_modified_date() )
 			);
 		return $time_string;
+	}
+endif;
+
+/**
+ * Print update time for current post.
+ */
+if (! function_exists('epixmaterialwp_update_time')):
+	function epixmaterialwp_update_time ( $wrap = true, $wrap_class = 'mdl-card__supporting-text' ) {
+		if ($wrap == false) {
+			echo epixmaterialwp_get_update_time();
+		} else {
+			echo '<div class="' . $wrap_class . '">' . epixmaterialwp_get_update_time() . '</div>';
+		}
 	}
 endif;
 
@@ -78,6 +104,19 @@ if (! function_exists('epixmaterialwp_get_tags')):
 			return '<span class="tags-links">' . $tags_list . '</span>';
 		} else {
 			return '';
+		}
+	}
+endif;
+
+/**
+ * Print update time for current post.
+ */
+if (! function_exists('epixmaterialwp_tags')):
+	function epixmaterialwp_tags ( $wrap = true, $wrap_class = 'mdl-card__supporting-text' ) {
+		if ($wrap == false) {
+			echo epixmaterialwp_get_tags();
+		} else {
+			echo '<div class="' . $wrap_class . '">' . epixmaterialwp_get_tags() . '</div>';
 		}
 	}
 endif;

@@ -26,19 +26,17 @@
             }
             ?>
         </div>
+        <?php if ( 'post' === get_post_type() ) :
+            epixmaterialwp_tags();
+        endif; ?>
         <div class="mdl-card__supporting-text">
             <?php echo strip_tags(get_the_content( '' )); ?>
         </div>
+        <?php if ('post' === get_post_type()) :
+            epixmaterialwp_publish_time();
+            epixmaterialwp_update_time();
+        endif; ?>
         <?php if ( 'post' === get_post_type() ) : ?>
-            <div class="mdl-card__supporting-text">
-                <?php echo epixmaterialwp_get_publish_time(); ?>
-            </div>
-            <div class="mdl-card__supporting-text">
-                <?php echo epixmaterialwp_get_update_time(); ?>
-            </div>
-            <div class="mdl-card__supporting-text">
-                <?php echo epixmaterialwp_get_tags(); ?>
-            </div>
             <div class="mdl-card__supporting-text">
                 <?php echo epixmaterialwp_get_cats(); ?>
             </div>
