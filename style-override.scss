@@ -2,7 +2,13 @@
 Override Style
 */
 
-/*make inner img auto fill card media space*/
+/* compact row */
+.epixmdl_compact_row{
+  padding-top:0;
+  padding-bottom: 0;
+}
+
+/* make inner img auto fill card media space */
 
 .mdl-card__media > img{
   width:100%;
@@ -46,7 +52,7 @@ Override Style
   display: block;
   height: 32px;
   line-height: 32px;
-  margin: 8px 8px 0 0;
+  margin: 0 8px 0 0;
   padding: 0 12px;
   float: left;
   box-sizing: border-box;
