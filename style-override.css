@@ -1,6 +1,11 @@
 /*
 Override Style
 */
+/*make inner img auto fill card media space*/
+.mdl-card__media > img {
+  width: 100%;
+  height: auto; }
+
 /* row style mdl card */
 .epixmdl_card {
   flex-direction: row; }
@@ -11,7 +16,8 @@ Override Style
   min-width: 200px; }
 
 .epixmdl_card__right {
-  flex: 1; }
+  flex: 1;
+  min-width: 500px; }
 
 #primary > article {
   width: auto;
