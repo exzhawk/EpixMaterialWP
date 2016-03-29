@@ -27,7 +27,7 @@
             ?>
         </div>
         <?php if ( 'post' === get_post_type() ) :
-            epixmaterialwp_tags();
+            epixmaterialwp_tags($before='<div class="mdl-card__supporting-text epixmdl_compact_row">',$after='</div>');
         endif; ?>
         <div class="mdl-card__supporting-text">
             <?php echo strip_tags(get_the_content( '' )); ?>

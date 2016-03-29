@@ -112,12 +112,8 @@ endif;
  * Print update time for current post.
  */
 if (! function_exists('epixmaterialwp_tags')):
-	function epixmaterialwp_tags ( $wrap = true, $wrap_class = 'mdl-card__supporting-text' ) {
-		if ($wrap == false) {
-			echo epixmaterialwp_get_tags();
-		} else {
-			echo '<div class="' . $wrap_class . '">' . epixmaterialwp_get_tags() . '</div>';
-		}
+	function epixmaterialwp_tags ( $before = '', $after = '' ) {
+		echo $before . epixmaterialwp_get_tags() . $after;
 	}
 endif;
 
