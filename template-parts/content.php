@@ -42,5 +42,11 @@
             </div>
             <?php
         endif; ?>
+        <?php if ( 'post' === get_post_type() ) : ?>
+            <div class="mdl-card__actions">
+                <a href="<?php echo esc_url(get_permalink()) ?>" class="mdl-button mdl-js-button mdl-js-ripple-effect">read more</a>
+            </div>
+            <?php
+        endif; ?>
 	</div>
 </article><!-- #post-## -->
